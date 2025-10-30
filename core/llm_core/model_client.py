@@ -70,24 +70,24 @@ class QwenModelClient:
 
 
 
-#"/root/autodl-tmp/Qwen3-30B-A3B-Thinking-2507-FP8"
+#"/root/Qwen3-30B-A3B-Thinking-2507-FP8"
 
 class VLLMModelClient:
-    def __init__(self, model: str = "/root/autodl-tmp/Qwen3-8B", temperature: float = 0.3):
+    def __init__(self, model: str = "/root/Qwen3-8B", temperature: float = 0.3):
         self.model = model
         self.temperature = temperature
         # 初始化缓存
         self.cache = Cache('./data/llm_cache')
 
         # 设置代理环境变量（适配本地代理配置）
-        os.environ['HTTP_PROXY'] = 'http://127.0.0.1:36569'
-        os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:36569'
+        os.environ['HTTP_PROXY'] = 'http://127.0.0.1:33333'
+        os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:33333'
         os.environ['NO_PROXY'] = 'localhost,127.0.0.1'  # 排除本地地址不走代理
         # 设置CUDA可见设备 (新增部分)
         os.environ['CUDA_VISIBLE_DEVICES'] = '0, 1'  # 指定使用第0、1号GPU
 
         # 配置vLLM API服务器连接
-        self.api_key = "sk-agiclass"
+        self.api_key = "sssssss"
         self.api_base = "http://localhost:6008/v1"
         self.client = OpenAI(api_key=self.api_key,
                              base_url=self.api_base
