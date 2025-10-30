@@ -1,0 +1,57 @@
+{
+  "timestamp": "20251029_175014",
+  "performance": {
+    "timestamp": "2025-10-29T17:50:14.205309",
+    "uptime_seconds": 1127.1476140022278,
+    "uptime_human": "0小时18分钟",
+    "llm_calls_total": 1,
+    "cache_performance": {
+      "hits": 0,
+      "misses": 0,
+      "hit_rate": 0
+    },
+    "average_processing_times": {
+      "news_loading": 0.7431278228759766,
+      "event_extraction": 265.5646777153015,
+      "coordination_analysis": 840.8731987476349,
+      "report_generation": 0.0009622573852539062
+    },
+    "current_system_status": {
+      "memory_usage_percent": 23.8,
+      "cpu_usage_percent": 12.1
+    },
+    "performance_recommendations": [
+      "缓存命中率较低，建议优化缓存策略",
+      "event_extraction阶段处理时间较长，建议优化",
+      "coordination_analysis阶段处理时间较长，建议优化"
+    ]
+  },
+  "quality": {
+    "timestamp": "2025-10-29T17:50:14.205309",
+    "overall_quality": 0.5,
+    "metric_trends": {
+      "event_extraction_quality": {
+        "current": 1.0,
+        "average": 1.0,
+        "trend": "stable"
+      },
+      "analysis_quality": {
+        "current": 0.0,
+        "average": 0.0,
+        "trend": "stable"
+      }
+    },
+    "recommendations": [
+      "分析输出质量需要提升，检查分析器配置"
+    ]
+  },
+  "cache": {
+    "hits": 0,
+    "misses": 0,
+    "sets": 0,
+    "evictions": 0,
+    "hit_ratio": 0.0,
+    "size": 0,
+    "cache_dir": "./data/cache/llm"
+  }
+}

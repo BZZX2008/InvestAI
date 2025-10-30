@@ -1,0 +1,71 @@
+impact_levels:
+  high:
+    keywords: 
+      - "利率决策"
+      - "财政刺激"
+      - "贸易战"
+      - "金融危机"
+      - "重大政策"
+      - "经济衰退"
+      - "央行决议"
+      - "量化宽松"
+      - "债务违约"
+    description: "可能引发市场趋势转折"
+    priority: 1
+  
+  medium:
+    keywords:
+      - "经济数据"
+      - "行业监管" 
+      - "公司财报"
+      - "并购"
+      - "央行讲话"
+      - "通胀数据"
+      - "就业数据"
+      - "GDP"
+      - "PMI"
+    description: "可能加速现有趋势"
+    priority: 2
+  
+  low:
+    keywords:
+      - "常规数据"
+      - "分析师观点"
+      - "日常新闻"
+      - "市场评论"
+      - "个股新闻"
+    description: "市场噪音，影响有限"
+    priority: 3
+
+time_horizons:
+  short: 
+    range: "1-30天"
+    keywords: ["今日", "本周", "立即", "短期", "近日"]
+  mid:
+    range: "1-6个月"
+    keywords: ["季度", "中期", "未来数月", "年内"]
+  long:
+    range: "6个月以上"
+    keywords: ["长期", "结构性", "趋势性", "明年", "未来几年"]
+
+asset_categories:
+  equities:
+    - "科技股"
+    - "金融股"
+    - "消费股"
+    - "医药股"
+    - "能源股"
+  fixed_income:
+    - "国债"
+    - "公司债"
+    - "地方政府债"
+  commodities:
+    - "原油"
+    - "黄金"
+    - "铜"
+    - "农产品"
+  currencies:
+    - "美元"
+    - "欧元"
+    - "日元"
+    - "人民币"

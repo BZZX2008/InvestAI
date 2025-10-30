@@ -1,0 +1,86 @@
+asset_classes:
+  equities:
+    technology:
+      - "AAPL"
+      - "MSFT" 
+      - "GOOGL"
+      - "NVDA"
+      - "TSM"
+      - "AMD"
+      - "INTC"
+    financials:
+      - "JPM"
+      - "BAC"
+      - "GS"
+      - "MS"
+      - "V"
+      - "MA"
+    healthcare:
+      - "JNJ"
+      - "PFE"
+      - "UNH"
+      - "LLY"
+      - "MRK"
+      - "ABT"
+    consumer:
+      - "AMZN"
+      - "TSLA"
+      - "WMT"
+      - "PG"
+      - "KO"
+      - "MCD"
+    energy:
+      - "XOM"
+      - "CVX"
+      - "SHEL"
+      - "COP"
+      - "EOG"
+  
+  bonds:
+    government:
+      - "TLT"
+      - "IEF"
+      - "SHY"
+      - "GOVT"
+    corporate:
+      - "LQD"
+      - "HYG"
+      - "JNK"
+      - "VCIT"
+  
+  etfs:
+    broad_market:
+      - "SPY"
+      - "QQQ"
+      - "IWM"
+      - "VTI"
+      - "IVV"
+    sector:
+      - "XLK"
+      - "XLF"
+      - "XLV"
+      - "XLE"
+      - "XLY"
+      - "XLP"
+    international:
+      - "EFA"
+      - "EEM"
+      - "VXUS"
+  
+  commodities:
+    - "GLD"
+    - "SLV"
+    - "USO"
+    - "UNG"
+  
+  cash_equivalents:
+    - "货币基金"
+    - "短期国债"
+    - "银行存款"
+
+sector_mapping:
+  technology: ["信息技术", "软件", "硬件", "半导体", "互联网"]
+  financials: ["金融", "银行", "保险", "券商"]
+  healthcare: ["医疗", "制药", "生物科技", "医疗器械"]
+  consumer: ["消费", "零售", "汽车", "食品饮料"]
+  energy: ["能源", "石油", "天然气", "可再生能源"]

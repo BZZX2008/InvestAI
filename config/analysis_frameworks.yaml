@@ -1,0 +1,121 @@
+# 政策分析框架
+policy_framework:
+  analysis_dimensions:
+    - "政策意图与目标"
+    - "传导机制与路径" 
+    - "受益方与受损方"
+    - "时间框架与执行力"
+    - "意外后果与风险"
+  
+  policy_types:
+    monetary:
+      name: "货币政策"
+      indicators: ["利率", "准备金率", "公开市场操作", "信贷政策"]
+      impact_assets: ["债券", "货币", "银行股", "房地产"]
+    
+    fiscal:
+      name: "财政政策" 
+      indicators: ["财政赤字", "政府支出", "税收政策", "转移支付"]
+      impact_assets: ["基建股", "国债", "地方债", "消费股"]
+    
+    regulatory:
+      name: "监管政策"
+      indicators: ["行业准入", "资本要求", "业务限制", "合规成本"]
+      impact_assets: ["被监管行业股票", "相关ETF", "替代品资产"]
+    
+    industrial:
+      name: "产业政策"
+      indicators: ["补贴政策", "技术标准", "国产替代", "绿色发展"]
+      impact_assets: ["受益行业股票", "技术股", "新能源股"]
+
+
+
+
+
+# 宏观分析框架  
+macro_framework:
+  economic_cycles:
+    - name: "复苏期"
+      characteristics: ["政策宽松", "需求恢复", "企业盈利改善"]
+      asset_preferences: ["股票", "商品", "高收益债"]
+    
+    - name: "扩张期"
+      characteristics: ["经济增长", "通胀温和", "就业充分"] 
+      asset_preferences: ["股票", "商品", "公司债"]
+    
+    - name: "滞胀期"
+      characteristics: ["增长放缓", "通胀高企", "政策收紧"]
+      asset_preferences: ["商品", "通胀保值债券", "现金"]
+    
+    - name: "衰退期"
+      characteristics: ["经济收缩", "通缩压力", "政策宽松"]
+      asset_preferences: ["国债", "防御性股票", "现金"]
+
+  key_indicators:
+    growth: ["GDP", "工业产值", "零售销售", "PMI"]
+    inflation: ["CPI", "PPI", "PCE", "工资增长"]
+    employment: ["失业率", "非农就业", "劳动参与率"]
+    monetary: ["M2", "社融", "信贷脉冲"]
+
+
+
+
+
+# 行业分析框架
+industry_framework:
+  analysis_dimensions:
+    - "行业生命周期"
+    - "竞争格局"
+    - "盈利能力"
+    - "增长驱动"
+    - "政策环境"
+    - "技术变革"
+  
+  industry_groups:
+    technology:
+      subsectors: ["软件", "硬件", "半导体", "互联网"]
+      key_metrics: ["研发投入", "用户增长", "毛利率", "市销率"]
+      
+    financials:
+      subsectors: ["银行", "保险", "券商", "金融科技"]
+      key_metrics: ["净息差", "不良率", "ROE", "市盈率"]
+      
+    healthcare:
+      subsectors: ["制药", "生物科技", "医疗器械", "医疗服务"]
+      key_metrics: ["研发管线", "专利保护", "监管审批", "市盈率"]
+      
+    consumer:
+      subsectors: ["必需消费", "非必需消费", "零售", "汽车"]
+      key_metrics: ["同店销售", "市场份额", "品牌价值", "市盈率"]
+
+
+
+
+
+
+
+# 市场分析框架
+market_framework:
+  technical_analysis:
+    trend_indicators: ["移动平均线", "MACD", "趋势线", "布林带"]
+    momentum_indicators: ["RSI", "随机指标", "威廉指标", "CCI"]
+    volume_indicators: ["成交量", "OBV", "资金流向", "换手率"]
+  
+  sentiment_indicators:
+    - "VIX恐慌指数"
+    - "看涨/看跌比率"
+    - "投资者调查"
+    - "媒体情绪指数"
+  
+  market_regimes:
+    - name: "牛市"
+      characteristics: ["上升趋势", "高成交量", "积极情绪"]
+      strategy: "趋势跟踪，逢低买入"
+    
+    - name: "熊市" 
+      characteristics: ["下降趋势", "恐慌抛售", "负面情绪"]
+      strategy: "防御为主，反弹减仓"
+    
+    - name: "震荡市"
+      characteristics: ["区间波动", "低成交量", "犹豫情绪"]
+      strategy: "波段操作，高抛低吸"

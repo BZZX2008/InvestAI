@@ -1,0 +1,25 @@
+# 性能配置
+processing:
+  batch_size: 50
+  max_workers: 6
+  cache_ttl: 600  # 10分钟
+
+# 大数据处理配置  
+large_data:
+  enable_deduplication: true
+  deduplication_method: "id_and_content"  # id, content, id_and_content
+  max_news_per_batch: 100
+  memory_safety_margin: 0.8  # 内存使用安全边际
+
+# 监控配置
+monitoring:
+  enabled: true
+  interval: 30
+  log_level: "INFO"
+  performance_log: "logs/performance.log"
+
+# 缓存配置
+cache:
+  llm_cache_ttl: 86400  # 24小时
+  data_cache_ttl: 600   # 10分钟
+  max_cache_size: "2GB"

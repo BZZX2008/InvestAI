@@ -1,0 +1,27 @@
+model:
+  name: "qwen3:1.7b"
+  temperature: 0.7
+  max_tokens: 4000
+
+chromadb:
+  path: "./data/chroma_db"
+  collection_name: "investment_news"
+
+diskcache:
+  directory: "./data/cache"
+  size_limit: 1024 * 1024 * 1024  # 1GB
+
+news_sources:
+  update_interval: 300  # 5分钟
+  batch_size: 50
+
+json_parsing:
+  max_retries: 3
+  enable_aggressive_repair: true
+  max_string_length: 2000
+
+quality_assurance:
+  validation_strictness: "medium"  # low, medium, high
+  required_fields_tolerance: 0.7   # 70%的必需字段存在即可
+  enable_fallback_mechanisms: true
+
